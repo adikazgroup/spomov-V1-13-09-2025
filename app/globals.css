@@ -1,0 +1,135 @@
+@import url("https://fonts.cdnfonts.com/css/helvetica-neue-55");
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary: #6C63FF;
+  --color-border: #e2e8f0;
+  --color-input: #e2e8f0;
+  --color-ring: #3b82f6;
+  --color-background: #ffffff;
+  --color-foreground: #0f172a;
+  --color-secondary: #f6f6f7;
+  --color-destructive: #ef4444;
+  --color-muted: #94a3b8;
+  --color-accent: #1e1e1e;
+  --color-popover: #f9fafb;
+  --color-darkBg: #1d1d1f;
+  --color-darkMain: #01030e;
+  --color-dark: #080a1b;
+}
+
+body {
+  background: #fff;
+}
+
+.dark body {
+  background: #01030e;
+}
+
+.title {
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Custom side scrollbar */
+.sideBar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sideBar::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #f0f0f0;
+}
+
+.sideBar::-webkit-scrollbar-thumb {
+  background: rgb(192, 192, 192);
+  border-radius: 10px;
+}
+
+.sideBar::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Custom side scrollbar - Dark Mode */
+.dark .sideBar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.dark .sideBar::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #1a1a1a;
+  /* Darker background for dark mode */
+}
+
+.dark .sideBar::-webkit-scrollbar-thumb {
+  background: #444444;
+  /* Darker thumb for dark mode */
+  border-radius: 10px;
+}
+
+.dark .sideBar::-webkit-scrollbar-thumb:hover {
+  background: #666666;
+  /* Darker hover state for dark mode */
+}
+
+/* Easy use */
+.ani2 {
+  transition: all 0.2s ease-in-out !important;
+}
+
+.ani3 {
+  transition: all 0.3s ease-in-out !important;
+}
+
+.ani5 {
+  transition: all 0.5s ease-in-out !important;
+}
+
+.ani7 {
+  transition: all 0.7s ease-in-out !important;
+}
+
+/* position */
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* No scrollbar */
+.noBar::-webkit-scrollbar {
+  display: none;
+}
+
+.noBar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* select arrow  */
+.arrow {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  background: white url('data:image/svg+xml;utf8,<svg fill="%23000000" height="10px" width="9px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 330"><path d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"></path></svg>') no-repeat;
+  background-position: calc(100% - 10px) center;
+  border: 1px solid #ccc;
+  padding-right: 30px;
+}
+
+/* Side Menu For mobile height or sideNav */
+.dynamicMenuHeight {
+  height: calc(100vh - 4.052rem);
+}
