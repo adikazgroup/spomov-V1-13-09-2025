@@ -116,15 +116,14 @@ export default function LoginForm() {
             Google
           </button>
           <button className="px-4 py-2 border rounded-md center gap-2 border-gray-300 dark:border-gray-700/80">
-            <Icon icon="mage:facebook" className="size-5 text-[#1877F2]" />
-            Facebook
-          </button>
-          <button className="px-4 py-2 border rounded-md center gap-2 border-gray-300 dark:border-gray-700/80">
             <Icon
               icon="ri:twitter-x-line"
               className="size-5 text-black dark:text-white"
             />
-            Twitter
+          </button>
+          <button className="px-4 py-2 border rounded-md center gap-2 border-gray-300 dark:border-gray-700/80">
+            <Icon icon="mage:facebook" className="size-5 text-[#1877F2]" />
+            Facebook
           </button>
         </div>
       </div>

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function ForgotPasswordPage() {
   return (
-    <div className="flex h-screen dark:bg-darkPrimary p-5">
+    <div className="flex h-screen bg-white dark:bg-[#01030e] p-5">
       {/* Left visual panel (same as Login) */}
       <div className="w-1/2 h-full bg-primary dark:bg-gradient-to-br dark:from-[#2B2499] dark:to-[#6C63FF] rounded-2xl center flex-col">
         <Image
@@ -42,7 +42,7 @@ export default function ForgotPasswordPage() {
             </Link>
             <span className="text-gray-400">•</span>
             <Link href="/sign-up" className="text-primary font-medium">
-              Create Account
+              Back to SignUp
             </Link>
           </div>
         </div>
